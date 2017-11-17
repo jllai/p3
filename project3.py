@@ -98,6 +98,7 @@ cur = conn.cursor()
 cur.execute('DROP TABLE IF EXISTS Users')
 cur.execute('DROP TABLE IF EXISTS Tweets')
 
+#Creates User table
 cur.execute('''
 CREATE TABLE Users (user_id INTEGER PRIMARY KEY, screen_name TEXT, num_favs INTEGER, description TEXT)''')
 
